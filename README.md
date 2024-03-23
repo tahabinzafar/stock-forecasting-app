@@ -25,18 +25,21 @@ To run the application, follow these steps:
 
 1. Clone this repository to your local machine.
 2. Navigate to the project directory.
-
+```plaintext
 cd stock_prediction_app
-
+```
 3. Install the required Python packages using pip.
-
+```plaintext
 pip install -r requirements.txt
-
+```
 4. Run the Flask application.
-
+```plaintext
 python app.py
-
+```
 5. Open a web browser and go to http://127.0.0.1:5000 to access the application.
+
+# Screenshot
+![Screenshot](static/images/output2.png)
 
 # Usage
 
@@ -45,4 +48,5 @@ python app.py
 - Choose a machine learning model (LSTM or GRU).
 - Click on the "Predict" button.
 - The predicted stock prices will be displayed on the web page along with the actual prices.
+
 
