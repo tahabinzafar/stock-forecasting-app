@@ -38,6 +38,9 @@ python app.py
 ```
 5. Open a web browser and go to http://127.0.0.1:5000 to access the application.
 
+# Screenshot
+![Screenshot](static/images/output2.png)
+
 # Usage
 
 - Select a stock ticker symbol from the dropdown menu.
@@ -45,4 +48,5 @@ python app.py
 - Choose a machine learning model (LSTM or GRU).
 - Click on the "Predict" button.
 - The predicted stock prices will be displayed on the web page along with the actual prices.
+
 
