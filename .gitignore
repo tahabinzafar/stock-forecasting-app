@@ -1,0 +1,36 @@
+# Python virtual environment
+myenv/
+
+
+# Compiled Python files
+*.pyc
+__pycache__/
+
+# Environment-specific files
+.env
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+
+# Visual Studio Code settings
+.vscode/
+
+# Windows-specific files
+Thumbs.db
+desktop.ini
+
+# macOS folder attributes
+.DS_Store
+
+# Compiled bytecode
+*.pyc
+
+# Compiled C extensions
+*.so
+
+# Cache files
+.cache/
+
+# Distribution directories
+dist/
+build/

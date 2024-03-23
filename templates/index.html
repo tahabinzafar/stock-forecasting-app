@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stock Prediction</title>
+</head>
+<body>
+    <h1>Stock Prediction</h1>
+    <form action="/" method="post">
+        <label for="ticker">Select Ticker Symbol:</label>
+        <select name="ticker" id="ticker">
+            <option value="AAPL">AAPL</option>
+            <option value="MSFT">MSFT</option>
+            <option value="GOOGL">GOOGL</option>
+            <option value="AMZN">AMZN</option>
+            <option value="FB">FB</option>
+            <option value="TSLA">TSLA</option>
+            <option value="BRK-B">BRK-B</option>
+            <option value="JPM">JPM</option>
+            <option value="V">V</option>
+            <option value="JNJ">JNJ</option>
+        </select><br><br>
+        <label for="n_days">Number of Days for Prediction:</label>
+        <input type="number" name="n_days" id="n_days" value="30"><br><br>
+        <label for="model">Select Model:</label>
+        <select name="model" id="model">
+            <option value="LSTM">LSTM</option>
+            <option value="GRU">GRU</option>
+        </select><br><br>
+        <input type="submit" value="Predict">
+    </form>
+    <br>
+    {% if plot_image %}
+        <img src="{{ plot_image }}" alt="Predicted Prices">
+    {% endif %}
+</body>
+</html>
