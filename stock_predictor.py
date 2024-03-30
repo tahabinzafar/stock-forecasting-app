@@ -3,8 +3,8 @@ import pandas as pd
 import matplotlib.pyplot as plt
 import yahoo_fin.stock_info as si
 from sklearn.preprocessing import MinMaxScaler
-from tensorflow.keras.models import Sequential
-from tensorflow.keras.layers import LSTM, GRU, Dense, Input
+from keras.models import Sequential
+from keras.layers import LSTM, GRU, Dense, Input
 from datetime import datetime
 
 def predict_next_n_days(ticker, n, model='LSTM', n_steps=30, epochs=20, batch_size=32):
