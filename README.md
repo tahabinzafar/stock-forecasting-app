@@ -11,6 +11,7 @@ stock_prediction_app/
 ├── app.py                   # Flask application file
 ├── stock_predictor.py       # Module for predicting and plotting stock prices
 ├── stock_prediction.ipynb   # Jupyter Notebook for experimenting and testing code
+├── Dockerfile               # Dockerfile for containerizing app
 ├── static/                  # Directory for static files
 │   └── images/              # Directory to store generated plot images
 ├── templates/               # Directory for HTML templates
@@ -21,22 +22,47 @@ stock_prediction_app/
 
 # Getting Started
 
-To run the application, follow these steps:
+To run the application, follow one of the following methods:
+
+## Local Setup
 
 1. Clone this repository to your local machine.
-2. Navigate to the project directory.
+2. Navigate to the project directory:
 ```plaintext
-cd stock_prediction_app
+    cd stock_prediction_app
 ```
-3. Install the required Python packages using pip.
+3. Install the required Python packages using pip:
 ```plaintext
-pip install -r requirements.txt
+    pip install -r requirements.txt
 ```
-4. Run the Flask application.
+4. Run the Flask application:
 ```plaintext
-python app.py
+    python app.py
 ```
 5. Open a web browser and go to http://127.0.0.1:5000 to access the application.
+
+## Running with Docker
+
+1. Clone this repository to your local machine.
+2. Navigate to the project directory:
+```plaintext
+    cd stock_prediction_app
+```
+3. Build the Docker image using the provided Dockerfile:
+```plaintext
+    docker build -t stock-prediction-app .
+```
+4. Run a Docker container using the built image:
+```plaintext
+    docker run -p 5000:5000 stock-prediction-app
+```
+5. Open a web browser and go to http://127.0.0.1:5000 to access the application.
+
+
+
+
+
+
 
 # Screenshot
 ![Screenshot](static/images/output2.png)
